@@ -1,0 +1,48 @@
+{
+  "name": "megalo-template",
+  "version": "1.0.0",
+  "description": "a megalo project",
+  "main": "index.js",
+  "scripts": {
+    "dev:alipay": "webpack --config ./build/webpack.config.alipay.js -w",
+    "dev:swan": "webpack --config ./build/webpack.config.swan.js -w",
+    "dev:wechat": "webpack --config ./build/webpack.config.wechat.js -w",
+    "lint": "eslint --fix --ext .js,.vue src"
+  },
+  "keywords": [],
+  "author": "songyazhao <syazhao@foxmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@megalo/target": "^0.3.0",
+    "@megalo/template-compiler": "^0.4.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.9.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.5.17",
+    "vue-loader": "15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@megalo/vhtml-plugin": "^0.1.0",
+    "flyio": "^0.6.4",
+    "megalo": "^0.4.0",
+    "octoparse": "^0.2.0"
+  }
+}
