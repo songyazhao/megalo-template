@@ -1,7 +1,7 @@
 // - MyPlugin
-import request from '@/utils/request'
-import validator from '@/utils/validator'
-import { baseURL } from '@/utils/request/config'
+import request from '@/helpers/request'
+import validator from '@/helpers/validator'
+import { baseURL } from '@/helpers/request/config'
 
 export default {
   /**

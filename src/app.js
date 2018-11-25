@@ -1,8 +1,10 @@
 import App from './App'
 import Vue from 'vue'
 import VHtmlPlugin from '@megalo/vhtml-plugin'
+import MyPlugin from '@/plugins'
 
 Vue.use(VHtmlPlugin)
+Vue.use(MyPlugin)
 
 const app = new Vue(App)
 
