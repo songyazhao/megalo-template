@@ -22,9 +22,10 @@ export default {
   beforeCreate () {
     console.log('Page Vue beforeCreate')
   },
-  created () {
+  async created () { // - asnyc
+    await new Promise((resolve) => resolve('yes'))
     console.log('Page Vue created')
-    var appInstance = getApp()
+    const appInstance = getApp()
     console.log(appInstance.globalData) // I am global data
   },
   beforeMount () {
